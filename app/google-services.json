@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620508879548",
+    "project_id": "firebase-modules"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620508879548:android:37876bbd6cc98951",
+        "android_client_info": {
+          "package_name": "com.bleu_autom.modules"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620508879548-vbd9u3vd15sf4vldqlp08mdi2uge06i1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bleu_autom.modules",
+            "certificate_hash": "88B55C6061E58244F2193C8646FFD9E18DA6EB8B"
+          }
+        },
+        {
+          "client_id": "620508879548-brt37jrm5iffbm85uev7c5q31mlof20u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwquJRp0usneGi0FR4eoFlo9YJyoajcTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

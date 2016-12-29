@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            >
+            <!--Action Bar-->
+            <RelativeLayout
+                android:id="@+id/input_str_dialog_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/colorPrimary">
+
+                <!--nav-->
+                <ImageView
+                    android:id="@+id/input_str_dialog_actionBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/backicon_001"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"/>
+
+                <!--title-->
+                <TextView
+                    android:id="@+id/input_str_dialog_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/basic_white"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerInParent="true"
+                    android:text="Title"/>
+
+                <!--notice-->
+                <TextView
+                    android:id="@+id/input_str_dialog_finished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/basic_white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_margin="10dp"
+                    android:text="完成"/>
+
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/input_str_dialog_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/border"
+                android:lines="20"
+                android:gravity="top|left"
+                android:hint="請輸入內容"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

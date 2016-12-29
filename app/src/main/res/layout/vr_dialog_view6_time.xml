@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view6_ll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/nav_self_background"
+    >
+    <!--Action Bar-->
+    <RelativeLayout
+        android:id="@+id/dialog_view6_time_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBar_height"
+        android:background="@color/colorPrimary">
+        <!--nav-->
+        <ImageView
+            android:id="@+id/dialog_view6_time_actionBack"
+            android:layout_width="@dimen/actionBar_icon_nav_height"
+            android:layout_height="@dimen/actionBar_icon_nav_height"
+            android:src="@drawable/backicon_001"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <!--title-->
+        <TextView
+            android:id="@+id/dialog_view6_time_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/basic_white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerInParent="true"
+            android:text="Title"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <!--Top Bar-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolsBar_height"
+            android:background="@color/bottomBar_background">
+
+            <TextView
+                android:id="@+id/dialog_view6_time_txtDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="日期"
+                android:textColor="@color/basic_white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:background="@color/basic_gray"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/nav_line"/>
+
+            <TextView
+                android:id="@+id/dialog_view6_time_txtTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="時間"
+                android:textColor="@color/basic_black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:background="@color/bottomBar_background"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/nav_line"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_view6_time_txtShowDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/basic_black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dialog_view6_time_txtShowTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/basic_black"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <!--
+                android:startYear           开始年份
+                android:endYear             结束年份
+                android:spinnersShown       是否顯示下拉菜單
+                android:calendarViewShown   是否顯示日曆
+                android:datePickerMode      設定日期選擇的模式為捲動式
+             -->
+
+            <DatePicker
+                android:id="@+id/dialog_view6_time_datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TimePicker
+                android:id="@+id/dialog_view6_time_timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:timePickerMode="spinner"
+                android:visibility="invisible">
+
+            </TimePicker>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/dialog_view6_time_btnOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="確定"
+                android:textColor="@color/basic_black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/vr_base_btn_background"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/dialog_view6_time_btnRemove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清除"
+                android:textColor="@color/basic_black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/vr_base_btn_background"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
